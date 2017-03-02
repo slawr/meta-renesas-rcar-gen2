@@ -7,6 +7,8 @@ LIC_FILES_CHKSUM_remove_rcar-gen2 = "\
 
 S = "${WORKDIR}/git"
 
+DEPENDS += " libgudev "
+
 do_configure_prepend() {
     cd ${S}
     ./autogen.sh --noconfigure
